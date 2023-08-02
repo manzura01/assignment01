@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Three-Column Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .left-column {
+      width: 20%;
+      background-color: #c5f1dd;
+      padding: 20px;
+    }
+
+    .center-column {
+      width: 60%;
+      padding: 20px;
+      background-color: rgb(230, 230, 247);
+    }
+
+    .right-column {
+      width: 20%;
+      background-color: #e0c3c3;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-column">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#section1">Intro</a></li>
+        <li><a href="#section2">Audio</a></li>
+        <li><a href="#section3">Video</a></li>
+      </ul>
+    </div>
+
+    <div class="center-column">
+
+      <h1 id="section1">Intro</h1>
+      <P>
+        HTML stands for Hyper Text Markup Language · HTML is the standard markup language for creating Web pages · HTML describes the structure of a Web page . 
+      </P>
+
+      <h1 id="section2">Audio</h1>
+      <audio controls>
+        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/jump.ogg" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h1 id="section3">Video</h1>
+      <iframe width="560" height="315" src="https://youtu.be/8JQaedsB2qI" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+
+    <div class="right-column">
+      <h2>Remarks</h2>
+      <p>A  Audio Clip for This content</p>
+      <p>Video is about Intoduction to HTML</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Country Capitals</title>
+  <style>
+    p {
+      color: red;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+  <script>
+    function displayCapital() {
+      var countrySelect = document.getElementById("countrySelect");
+      var capitalDisplay = document.getElementById("capitalDisplay");
+      var selectedCountry = countrySelect.value;
+      var capital = "Please select a country.";
+
+      if (selectedCountry === "Bangladesh") {
+        capital = "Dhaka";
+      } else if (selectedCountry === "Turkey") {
+        capital = "Ankara";
+      } else if (selectedCountry === "pakistan") {
+        capital = "Islamabad";
+      } else if (selectedCountry === "Oman") {
+        capital = "Muscat";
+      } else if (selectedCountry === "UAE") {
+        capital = "Abu Dhabi";
+      }
+
+      capitalDisplay.innerHTML = capital;
+    }
+  </script>
+</head>
+<body>
+  <h1>Select a Country:</h1>
+  <select id="countrySelect" onchange="displayCapital()">
+    <option value="">--SELECT--</option>
+    <option value="Bangladesh">Bangladesh</option>
+    <option value="Turkey">Turkey</option>
+    <option value="pakistan">Pakistan</option>
+    <option value="Oman">Oman</option>
+    <option value="UAE">UAE</option>
+  </select>
+  <p id="capitalDisplay">Please select a country.</p>
+</body>
+</html>
